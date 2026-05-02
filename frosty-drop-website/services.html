@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Services</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+    <img src="images/logo.png" class="logo">
+    <nav class="nav-center">
+        <a href="index.html">Home</a>
+        <a href="categories.html">Categories</a>
+        <a href="products.html">Products</a>
+        <a href="services.html">Services</a>
+    </nav>
+    <img src="images/logo.png" class="logo">
+</header>
+<main>
+<h1 style="text-align:center;">Our Services</h1>
+
+<div class="grid">
+
+    <div class="card" onclick="toggleDelivery()">
+        <h2>Delivery Service</h2>
+        <p>Click to order delivery</p>
+    </div>
+
+    <div class="card" onclick="toggleCustom()">
+        <h2>Custom Drink</h2>
+        <p>Create your own drink</p>
+    </div>
+
+</div>
+
+<!-- DELIVERY SHEET -->
+<div id="deliverySheet" class="sheet">
+    <h2>Delivery Order</h2>
+
+    <input type="text" placeholder="Name">
+    <input type="text" placeholder="Phone Number">
+    <input type="text" placeholder="Address">
+
+    <h3>Select Products</h3>
+
+    <div class="menu-item">
+    <span class="item-name">Orange Juice</span>
+
+    <div class="qty-control">
+        <button onclick="changeQty(this, -1)">-</button>
+        <span>0</span>
+        <button onclick="changeQty(this, 1)">+</button>
+    </div>
+</div>
+
+<div class="menu-item">
+    <span class="item-name">Strawberry Smoothie</span>
+
+    <div class="qty-control">
+        <button onclick="changeQty(this, -1)">-</button>
+        <span>0</span>
+        <button onclick="changeQty(this, 1)">+</button>
+    </div>
+</div>
+
+<div class="menu-item">
+    <span class="item-name">Iced Latte</span>
+
+    <div class="qty-control">
+        <button onclick="changeQty(this, -1)">-</button>
+        <span>0</span>
+        <button onclick="changeQty(this, 1)">+</button>
+    </div>
+</div>
+
+<div class="menu-item">
+    <span class="item-name">Mixed Flavoured Drink</span>
+
+    <div class="qty-control">
+        <button onclick="changeQty(this, -1)">-</button>
+        <span>0</span>
+        <button onclick="changeQty(this, 1)">+</button>
+    </div>
+</div>
+
+    <button class="save-btn" onclick="saveDelivery()">Save Order</button>
+</div>
+
+<!-- CUSTOM DRINK SHEET -->
+<div id="customSheet" class="sheet">
+    <h2>Custom Drink</h2>
+
+    <!-- NEW INPUTS -->
+    <input type="text" placeholder="Name">
+    <input type="text" placeholder="Phone Number">
+
+    <p>Select Fruits:</p>
+
+<label><input type="checkbox"> Strawberry - 1.99 OMR</label><br>
+<label><input type="checkbox"> Banana - 1.99 OMR</label><br>
+<label><input type="checkbox"> Mango - 1.99 OMR</label><br>
+<label><input type="checkbox"> Blueberry - 1.99 OMR</label><br>
+<label><input type="checkbox"> Pineapple - 1.99 OMR</label><br>
+<label><input type="checkbox"> Watermelon - 1.99 OMR</label><br>
+<label><input type="checkbox"> Apple - 1.99 OMR</label><br>
+<label><input type="checkbox"> Orange - 1.99 OMR</label><br>
+<label><input type="checkbox"> Kiwi - 1.99 OMR</label><br>
+    <div class="custom-btn-container">
+        <button class="save-btn" onclick="saveCustom()">Save Order</button>
+    </div>
+</div>
+</main>
+<script src="script.js"></script>
+<footer class="footer">
+
+    <p class="copyright">CopyRights 2026 Amaar</p>
+
+    <div class="footer-container">
+
+       <div class="footer-item">
+    <a href="https://www.instagram.com" target="_blank">
+        <img src="images/instagram.png" class="icon">
+        <p>Frosty.Drop</p>
+    </a>
+</div>
+
+<div class="footer-item">
+    <a href="https://www.whatsapp.com" target="_blank">
+        <img src="images/whastapp.png" class="icon">
+        <p>+968 77196429</p>
+    </a>
+</div>
+
+<div class="footer-item">
+    <a href="https://mail.google.com" target="_blank">
+        <img src="images/email.png" class="icon">
+        <p>Frosty_Drop@gmail.com</p>
+    </a>
+</div>
+
+    </div>
+
+</footer>
+</body>
+</html>
